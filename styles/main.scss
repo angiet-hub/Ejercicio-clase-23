@@ -2,9 +2,19 @@
 
 @import 'layout/header';
 @import 'layout/aside';
+@import 'layout/main';
+@import 'layout/section';
 
 @import 'components/icons';
 @import 'components/inputs';
 @import 'components/images';
 
+body {
+    width: 100%;
+    font-family: $main-font ;
+}
 
+.container {
+    width: 100%;
+    display: flex;
+}

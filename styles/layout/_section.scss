@@ -1,0 +1,60 @@
+section {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 85px;
+        left: 133px;
+    }
+
+    p {
+        position: absolute;
+        top: 13px;
+        left: 18px;
+    }
+
+    i {
+        top: 29px;
+        color: $swatch_3;
+    }
+
+    .icon-video {
+        left: 226px;
+    }
+
+    .icon-phone {
+        left: 270px;
+    }
+
+    .icon-moon {
+        top: 14px;
+        left: 12px;
+        color: $swatch_1;
+    }
+
+    .icon-user {
+        top: 11px;
+        left: 12px;
+        color: $swatch_1;
+    }
+
+    span {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .moon {
+        background-color:red;
+        position: absolute;
+        bottom: 325px;
+        left: 93px;
+    }
+
+    .user {
+        background-color: green;
+        position:absolute;
+        bottom: 325px;
+        left: 260px;
+    }
+}
