@@ -1,8 +1,11 @@
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 63px;
-  border: 3px solid aliceblue; }
+  border: 3px solid aliceblue;
+  background-color: #fdfdfe;
+  top: 0;
+  z-index: 10; }
   header i {
     color: #e0dadd; }
   header .icon-chevron {
@@ -25,44 +28,57 @@ header {
 aside {
   display: flex;
   flex-direction: column;
-  width: 7%;
+  width: 8%;
   align-items: center;
   background-color: #e0dadd; }
   aside img {
     width: 44%;
     margin: 21px; }
+  aside :nth-child(4) {
+    background-color: #fdfdfe; }
+  @media (max-width: 784px) {
+    aside {
+      display: none; } }
 
 main {
   width: 60%;
-  padding-left: 45px;
   border: 3px solid aliceblue; }
-  main div {
-    margin: 11px 10px; }
   main img {
     width: 5%; }
+  main div {
+    display: flex;
+    padding: 10px 39px;
+    align-items: flex-start; }
   main span {
     font-size: 11px;
     border-radius: 11px;
     padding: 6px;
-    line-height: 30px; }
+    line-height: 20px;
+    width: 52%; }
   main .one span {
-    display: block;
-    width: 59%;
-    background-color: #e0dadd; }
-  main .two span {
-    width: 70%;
-    display: block;
-    margin-left: 158px;
-    background-color: #6f7399; }
-  main .two img {
-    float: right; }
+    background-color: #e0dadd;
+    border-radius: 0px 15px 15px 15px; }
+  main .one img {
+    margin-right: 10px; }
+  main .two {
+    flex-direction: row-reverse; }
+    main .two span {
+      background-color: #6f7399;
+      border-radius: 15px 0px 15px 15px; }
+    main .two img {
+      margin-left: 10px; }
+  @media (max-width: 866px) {
+    main {
+      width: 92%; } }
 
 section {
-  position: relative; }
+  position: relative;
+  width: 29%; }
   section img {
     position: absolute;
     top: 85px;
-    left: 133px; }
+    left: calc(50% - 20%);
+    width: 40%; }
   section p {
     position: absolute;
     top: 13px;
@@ -89,29 +105,51 @@ section {
   section .moon {
     background-color: red;
     position: absolute;
-    bottom: 325px;
-    left: 93px; }
+    bottom: 271px;
+    left: calc(20% - 20px); }
   section .user {
     background-color: green;
     position: absolute;
-    bottom: 325px;
-    left: 260px; }
+    bottom: 271px;
+    left: calc(80% - 20px); }
+  @media (max-width: 866px) {
+    section {
+      display: none; } }
+
+footer {
+  border: 3px solid aliceblue;
+  position: fixed;
+  width: 60%;
+  bottom: 0px;
+  height: 32px;
+  background-color: #fdfdfe; }
+  footer input {
+    left: 80px;
+    bottom: 4px;
+    width: 56%; }
+  @media (max-width: 866px) {
+    footer {
+      width: 100%; } }
 
 i {
   position: absolute; }
 
 input {
-  position: absolute; }
+  position: absolute;
+  border-color: #e0dadd;
+  border-radius: 10px; }
 
 img {
   border-radius: 50%; }
 
 body {
   width: 100%;
-  font-family: "Varela Round", sans-serif; }
+  font-family: "Varela Round", sans-serif;
+  margin: 0; }
 
 .container {
   width: 100%;
-  display: flex; }
+  display: flex;
+  margin-top: 68px; }
 
 /*# sourceMappingURL=main.css.map */

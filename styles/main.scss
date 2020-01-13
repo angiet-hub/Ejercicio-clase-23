@@ -4,6 +4,7 @@
 @import 'layout/aside';
 @import 'layout/main';
 @import 'layout/section';
+@import 'layout/footer';
 
 @import 'components/icons';
 @import 'components/inputs';
@@ -12,9 +13,11 @@
 body {
     width: 100%;
     font-family: $main-font ;
+    margin: 0;
 }
 
 .container {
     width: 100%;
     display: flex;
+    margin-top: 68px;
 }

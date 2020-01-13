@@ -1,0 +1,20 @@
+footer {
+    border: 3px solid aliceblue;
+    position: fixed;
+    width: 60%;
+    bottom: 0px;
+    height: 32px;
+    background-color: $swatch_1;
+
+    input {
+        left: 80px;
+        bottom: 4px;
+        width: 56%;
+    }
+    
+    @media(max-width:866px) {
+        width: 100%;
+    }
+}   
+
+
